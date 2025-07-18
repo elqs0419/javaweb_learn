@@ -11,6 +11,11 @@
         <!--父工程的pom.xml的相对路径-->
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <modules>
+        <module>../tlias-utils</module>
+        <module>../tlias-pojo</module>
+        <module>../tlias-web-management</module>
+    </modules>
     <groupId>com.itheima</groupId>
     <artifactId>tlias-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
