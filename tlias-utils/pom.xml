@@ -3,8 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.itheima</groupId>
+    <!--    父工程-->
+    <parent>
+        <groupId>com.itheima</groupId>
+        <artifactId>tlias-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../tlias-parent/pom.xml</relativePath>
+    </parent>
     <artifactId>tlias-utils</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -15,11 +20,7 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-            <version>3.2.10</version>
-        </dependency>
+
         <!--阿里云OSS依赖-->
         <dependency>
             <groupId>com.aliyun.oss</groupId>
@@ -44,12 +45,7 @@
             <version>2.3.3</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.34</version>
-            <optional> true</optional>
-        </dependency>
+
 
         <!--JWT-->
         <dependency>
